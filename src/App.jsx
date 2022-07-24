@@ -1,5 +1,5 @@
 import React from "react";
-import Todos from "./components/Todos";
+import TodoListContainer from "./components/TodoListContainer";
 import styled from "styled-components";
 import AddForm from "./components/AddForm";
 
@@ -7,7 +7,7 @@ const App = () => {
   return (
     <StContainer>
       <AddForm />
-      <Todos />
+      <TodoListContainer />
     </StContainer>
   );
 };

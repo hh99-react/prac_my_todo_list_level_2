@@ -1,9 +1,12 @@
+// Action value
 const ADD_TODO = "ADD_TODO";
 
+// Action Creator
 export const addTodo = (payload) => {
   return { type: ADD_TODO, payload };
 };
 
+// initial State
 const initialState = {
   todos: [
     {
@@ -17,6 +20,7 @@ const initialState = {
   ],
 };
 
+// Reducer
 const todos = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TODO:

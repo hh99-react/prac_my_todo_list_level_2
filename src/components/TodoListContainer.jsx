@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import styled from "styled-components";
 
-const Todos = () => {
+const TodoListContainer = () => {
   const { todos } = useSelector((state) => state.todos);
   return (
     <StTodos>
@@ -13,7 +13,7 @@ const Todos = () => {
   );
 };
 
-export default Todos;
+export default TodoListContainer;
 
 const StTodos = styled.div`
   display: flex;
